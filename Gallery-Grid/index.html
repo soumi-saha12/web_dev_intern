@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captured Moments — Image Gallery</title>
+  <meta name="description" content="A refined minimalist image gallery featuring a clean grid layout, subtle hover transitions, and an elegant fullscreen lightbox.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Section -->
+    <header class="gallery-header">
+      <p class="gallery-eyebrow">Collection</p>
+      <h1 class="gallery-title">Captured Moments</h1>
+      <p class="gallery-subtitle">A curated set of images — click any to explore.</p>
+    </header>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="cosmic">Cosmic</button>
+      <button class="filter-btn" data-filter="urban">Urban</button>
+      <button class="filter-btn" data-filter="abstract">Abstract</button>
+      <button class="filter-btn" data-filter="favourites">♡ Favourites</button>
+    </div>
+
+    <main>
+      <!-- Main Gallery Container -->
+      <div id="gallery">
+        
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item" data-index="0" data-category="nature">
+          <img src="images/1.jpg" alt="Luminous Fantasy Forest with giant glowing mushrooms and starry twilight sky" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Luminous Forest</p>
+          </div>
+          <button class="fav-btn" data-id="1" aria-label="Favourite">♡</button>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item" data-index="1" data-category="urban">
+          <img src="images/2.jpg" alt="Futuristic cyberpunk city at night with neon lights and flying cars" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Urban Decay</p>
+          </div>
+          <button class="fav-btn" data-id="2" aria-label="Favourite">♡</button>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item" data-index="2" data-category="nature">
+          <img src="images/3.jpg" alt="Alpine lake reflecting majestic snow-capped mountain peaks at sunrise" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Still Waters</p>
+          </div>
+          <button class="fav-btn" data-id="3" aria-label="Favourite">♡</button>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item" data-index="3" data-category="urban">
+          <img src="images/4.jpg" alt="Minimalist concrete villa on cliffside with infinity pool and dramatic sunset" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Golden Hour</p>
+          </div>
+          <button class="fav-btn" data-id="4" aria-label="Favourite">♡</button>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item" data-index="4" data-category="abstract">
+          <img src="images/5.jpg" alt="Ethereal abstract art displaying gold and indigo liquid swirling patterns" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Morning Mist</p>
+          </div>
+          <button class="fav-btn" data-id="5" aria-label="Favourite">♡</button>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item" data-index="5" data-category="nature">
+          <img src="images/6.jpg" alt="Ancient stone temple ruins covered in vines hidden deep in a tropical jungle" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Solitude</p>
+          </div>
+          <button class="fav-btn" data-id="6" aria-label="Favourite">♡</button>
+        </div>
+
+        <!-- Gallery Item 7 -->
+        <div class="gallery-item" data-index="6" data-category="cosmic">
+          <img src="images/7.jpg" alt="Stellar cosmic nebula gas clouds and clusters of glowing stars in deep space" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Ember Glow</p>
+          </div>
+          <button class="fav-btn" data-id="7" aria-label="Favourite">♡</button>
+        </div>
+
+        <!-- Gallery Item 8 -->
+        <div class="gallery-item" data-index="7" data-category="cosmic">
+          <img src="images/8.jpg" alt="Vibrant neon synthwave landscape with geometric grid and digital sunset wireframe" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Fading Light</p>
+          </div>
+          <button class="fav-btn" data-id="8" aria-label="Favourite">♡</button>
+        </div>
+
+        <!-- Gallery Item 9 -->
+        <div class="gallery-item" data-index="8" data-category="abstract">
+          <img src="images/9.jpg" alt="Newly Added Artwork" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Infinite Calm</p>
+          </div>
+          <button class="fav-btn" data-id="9" aria-label="Favourite">♡</button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Lightbox Overlay Structure -->
+  <div id="lightbox" class="lightbox">
+
+    <!-- blurred background grid -->
+    <div class="lb-bg-grid" id="lbBgGrid"></div>
+
+    <!-- controls -->
+    <button class="lb-close" id="lbClose">&#10005;</button>
+    <button class="lb-nav lb-prev" id="lbPrev">&#8249;</button>
+    <button class="lb-nav lb-next" id="lbNext">&#8250;</button>
+
+    <!-- main focused image -->
+    <div class="lb-main">
+      <img id="lbImg" src="" alt="Expanded view" />
+      <span class="lb-label" id="lbLabel"></span>
+      <span class="lb-counter" id="lbCounter"></span>
+    </div>
+
+    <!-- bottom thumbnail strip -->
+    <div class="lb-strip" id="lbStrip"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumi Saha | Portfolio - AI & ML Engineer</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Personal portfolio of Soumi Saha - Third-year B.Tech CSE (AI & ML) student at IEM Kolkata, AI Domain Intern at Infosys Springboard, Machine Learning Developer, and Hackathon Winner.">
+    <meta name="keywords" content="Soumi Saha, AI ML Student, B.Tech CSE, Portfolio, Machine Learning, Infosys Springboard, Healthcare AI, LightGBM, XGBoost, SHAP, Developer, Hackathon Winner, IEM Kolkata">
+    <meta name="author" content="Soumi Saha">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Comprehensive Inline Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR: Fixed sticky top glass bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container container">
+            <a href="#hero" class="nav-logo" id="nav-logo-link">Soumi.</a>
+            
+            <!-- Desktop Navbar links -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+                <li><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+                <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" id="nav-link-experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+                <li><a href="#achievements" class="nav-link" id="nav-link-achievements">Achievements</a></li>
+                <li><a href="#resume" class="nav-link" id="nav-link-resume">Resume</a></li>
+                <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Hamburger toggle trigger -->
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-mid"></span>
+                <span class="bar bar-bot"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Overlay panels -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <ul class="mobile-menu" id="mobile-menu-list">
+            <li><a href="#about" class="mobile-link" id="mobile-link-about">About</a></li>
+            <li><a href="#education" class="mobile-link" id="mobile-link-education">Education</a></li>
+            <li><a href="#skills" class="mobile-link" id="mobile-link-skills">Skills</a></li>
+            <li><a href="#experience" class="mobile-link" id="mobile-link-experience">Experience</a></li>
+            <li><a href="#projects" class="mobile-link" id="mobile-link-projects">Projects</a></li>
+            <li><a href="#achievements" class="mobile-link" id="mobile-link-achievements">Achievements</a></li>
+            <li><a href="#resume" class="mobile-link" id="mobile-link-resume">Resume</a></li>
+            <li><a href="#contact" class="mobile-link" id="mobile-link-contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- HEADER: Hero & Profile (Two-column layout) -->
+    <header class="hero-section" id="hero">
+        <div class="hero-container container">
+            
+            <!-- Left Side Content -->
+            <div class="hero-text-content">
+                <h1 class="hero-title" id="hero-main-title">Soumi Saha</h1>
+                
+                <h2 class="hero-subtitle">
+                    I'm a <span class="typewriter-text" id="typewriter-text"></span><span class="cursor-blink">|</span>
+                </h2>
+
+                <p class="hero-desc">
+                    Third-year B.Tech CSE (AI &amp; ML) student at the Institute of Engineering and Management (IEM), Kolkata. AI Domain Intern at Infosys Springboard with a focus on healthcare risk intelligence, explainable AI, ensemble modeling, and scalable software solutions.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="assets/Soumi_Saha_Resume.pdf" download="Soumi_Saha_Resume.pdf" class="btn-pill btn-pill-primary" id="hero-cta-resume">Download Resume</a>
+                    <a href="#contact" class="btn-pill btn-pill-secondary" id="hero-cta-contact">Contact Me</a>
+                </div>
+                
+                <!-- Social Icons Row below buttons -->
+                <div class="hero-social-row">
+                    <a href="https://github.com/soumi-saha12" target="_blank" rel="noopener noreferrer" class="hero-soc-icon" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/soumi-saha-523bba318" target="_blank" rel="noopener noreferrer" class="hero-soc-icon" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:soumisms12@gmail.com" class="hero-soc-icon" aria-label="Email" title="Email soumisms12@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side Profile Picture -->
+            <div class="hero-image-content">
+                <div class="photo-wrapper">
+                    <div class="arc arc-1"></div>
+                    <div class="arc arc-2"></div>
+                    <img src="assets/profile.jpg" alt="Soumi Saha" class="profile-img" id="hero-profile-img">
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- MAIN: Portfolio sections -->
+    <main>
+        
+        <!-- SECTION: ABOUT -->
+        <section id="about" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-card-wrapper">
+                    <div class="glass-card about-card">
+                        <div class="about-card-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left fa-2x"></i>
+                            </div>
+                            <p class="about-text-lead">
+                                Third-year B.Tech student in Computer Science Engineering specializing in Artificial Intelligence and Machine Learning at the <strong>Institute of Engineering and Management (IEM)</strong>, under the University of Engineering and Management, Kolkata. Skilled in Python, Java, Data Structures and Algorithms, and AI/ML, with hands-on experience in healthcare risk intelligence, explainable AI, cloud anomaly detection, and competitive hackathons.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: EDUCATION -->
+        <section id="education" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+
+                    <!-- IEM Kolkata B.Tech -->
+                    <div class="timeline-item timeline-left">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content-card edu-card">
+                            <div class="timeline-header">
+                                <span class="timeline-date">Jul 2024 – Present</span>
+                                <h3 class="timeline-title">Institute of Engineering and Management (IEM), Kolkata</h3>
+                                <h4 class="timeline-subtitle">B.Tech CSE (AI &amp; ML)</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="edu-badge-row">
+                                    <span class="edu-badge">CGPA: 8.63/10 <span class="edu-badge-muted">(upto 4th sem)</span></span>
+                                    <span class="edu-badge">Third-Year Undergraduate</span>
+                                </div>
+                                <p class="edu-coursework">
+                                    <strong>Relevant Coursework:</strong> Database Management Systems, Object-Oriented Programming, Software Engineering, Data Structures &amp; Algorithms, AI &amp; ML
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Techno India XII & X -->
+                    <div class="timeline-item timeline-right">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content-card edu-card">
+                            <div class="timeline-header">
+                                <span class="timeline-date">2022 – 2024</span>
+                                <h3 class="timeline-title">Techno India Group Public School, Siliguri</h3>
+                                <h4 class="timeline-subtitle">High School Education (CBSE)</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="school-grades">
+                                    <div class="grade-row">
+                                        <span class="grade-label">Class XII (CBSE):</span>
+                                        <span class="grade-val">84.2%</span>
+                                        <span class="grade-date">2024</span>
+                                    </div>
+                                    <div class="grade-row">
+                                        <span class="grade-label">Class X (CBSE):</span>
+                                        <span class="grade-val">96.6%</span>
+                                        <span class="grade-date">2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: SKILLS -->
+        <section id="skills" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- 1. AI & Machine Learning -->
+                    <div class="glass-card skill-card-item">
+                        <div class="skill-header">
+                            <div class="skill-icon-box">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-header-text">
+                                <h3 class="skill-card-title">AI &amp; Machine Learning</h3>
+                                <span class="skill-meta-label">Ensembles, Modeling &amp; Explainability</span>
+                            </div>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">LightGBM</li>
+                            <li class="skill-tag">XGBoost</li>
+                            <li class="skill-tag">CatBoost</li>
+                            <li class="skill-tag">Scikit-learn</li>
+                            <li class="skill-tag">SHAP (Explainable AI)</li>
+                            <li class="skill-tag">Ensemble Learning</li>
+                            <li class="skill-tag">Risk Modeling</li>
+                            <li class="skill-tag">Anomaly Detection</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. Languages & Web Technologies -->
+                    <div class="glass-card skill-card-item">
+                        <div class="skill-header">
+                            <div class="skill-icon-box">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-header-text">
+                                <h3 class="skill-card-title">Programming &amp; Web</h3>
+                                <span class="skill-meta-label">Core Languages &amp; Web Interfaces</span>
+                            </div>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">Python</li>
+                            <li class="skill-tag">Java</li>
+                            <li class="skill-tag">JavaScript</li>
+                            <li class="skill-tag">React.js</li>
+                            <li class="skill-tag">HTML5</li>
+                            <li class="skill-tag">CSS3</li>
+                            <li class="skill-tag">REST APIs</li>
+                            <li class="skill-tag">Flask</li>
+                            <li class="skill-tag">PostgreSQL</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Data Science & Analytics -->
+                    <div class="glass-card skill-card-item">
+                        <div class="skill-header">
+                            <div class="skill-icon-box">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="skill-header-text">
+                                <h3 class="skill-card-title">Data Science &amp; Analytics</h3>
+                                <span class="skill-meta-label">Processing &amp; Scientific Tooling</span>
+                            </div>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">Pandas</li>
+                            <li class="skill-tag">NumPy</li>
+                            <li class="skill-tag">Matplotlib</li>
+                            <li class="skill-tag">Feature Engineering</li>
+                            <li class="skill-tag">Data Preprocessing</li>
+                            <li class="skill-tag">Jupyter Notebook</li>
+                            <li class="skill-tag">Google Colab</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Tools & CS Foundations -->
+                    <div class="glass-card skill-card-item">
+                        <div class="skill-header">
+                            <div class="skill-icon-box">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <div class="skill-header-text">
+                                <h3 class="skill-card-title">Tools &amp; CS Foundations</h3>
+                                <span class="skill-meta-label">Workflows &amp; Core Computer Science</span>
+                            </div>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">Git</li>
+                            <li class="skill-tag">GitHub</li>
+                            <li class="skill-tag">VS Code</li>
+                            <li class="skill-tag">Postman</li>
+                            <li class="skill-tag">Excel</li>
+                            <li class="skill-tag">DBMS</li>
+                            <li class="skill-tag">OOP</li>
+                            <li class="skill-tag">Software Engineering</li>
+                            <li class="skill-tag">DSA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: EXPERIENCE -->
+        <section id="experience" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="experience-wrapper">
+                    <div class="glass-card experience-card exp-card">
+                        <div class="experience-card-header">
+                            <div class="exp-header-left">
+                                <span class="exp-date">2026</span>
+                                <h3 class="exp-title">AI Domain Intern</h3>
+                                <h4 class="exp-company">Infosys Springboard</h4>
+                            </div>
+                            <div class="exp-badge">Internship</div>
+                        </div>
+                        <div class="experience-card-body">
+                            <ul class="exp-bullet-list">
+                                <li>Worked on machine learning based hospital readmission risk prediction using healthcare data.</li>
+                                <li>Performed data preprocessing, feature engineering, and developed ensemble machine learning models for risk prediction.</li>
+                                <li>Applied SHAP based Explainable AI to interpret predictions and identify key contributing features.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: PROJECTS -->
+        <section id="projects" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid-container">
+                    <!-- Project 1: Hospital Readmission Prediction -->
+                    <article class="glass-card project-card" id="proj-hospital-readmission">
+                        <div class="project-img-wrapper">
+                            <a href="assets/project-readmission.png" target="_blank" rel="noopener noreferrer" class="project-img-link" title="Click to view full screenshot">
+                                <img src="assets/project-readmission.png" alt="Hospital Readmission Prediction &amp; Patient Risk Intelligence System Dashboard" class="project-img" loading="lazy">
+                            </a>
+                            <div class="visual-badge">AI / HEALTHCARE</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-cat">AI/ML Project</span>
+                                <span class="project-date">2026</span>
+                            </div>
+                            <h3 class="project-title">Hospital Readmission Prediction &amp; Patient Risk Intelligence System</h3>
+                            <p class="project-excerpt">
+                                Developed readmission risk prediction system using weighted ensemble of LightGBM, XGBoost, and CatBoost. Applied SHAP based Explainable AI to interpret predictions and identify key contributing patient risk features.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">LightGBM</span>
+                                <span class="tag">XGBoost</span>
+                                <span class="tag">CatBoost</span>
+                                <span class="tag">SHAP</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">React.js</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Cloud Anomaly Detection System -->
+                    <article class="glass-card project-card" id="proj-cloud-anomaly">
+                        <div class="project-img-wrapper">
+                            <a href="assets/project-cloud-anomaly.png" target="_blank" rel="noopener noreferrer" class="project-img-link" title="Click to view full screenshot">
+                                <img src="assets/project-cloud-anomaly.png" alt="Cloud Anomaly Detection System Dashboard" class="project-img" loading="lazy">
+                            </a>
+                            <div class="visual-badge">CLOUD / ML</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-cat">Machine Learning Project</span>
+                                <span class="project-date">2026</span>
+                            </div>
+                            <h3 class="project-title">Cloud Anomaly Detection System</h3>
+                            <p class="project-excerpt">
+                                Developed ML system for cloud anomaly detection using preprocessing, feature engineering, and anomaly analysis to discover and flag abnormal patterns in telemetry data.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">NumPy</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">Matplotlib</span>
+                                <span class="tag">Jupyter Notebook</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://cloud-anomaly-detection-system.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="project-link-pill">
+                                    <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: ACHIEVEMENTS -->
+        <section id="achievements" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements &amp; Certifications</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Achievement 1 -->
+                    <div class="glass-card achievement-card">
+                        <div class="ach-badge">HACKATHON</div>
+                        <h3 class="ach-title">IEEE DoubleSlash 4.0</h3>
+                        <p class="ach-desc">
+                            Secured <strong>Top 11 out of 350 teams</strong> at a 36-hour hackathon organized by IEEE Jadavpur University.
+                        </p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="glass-card achievement-card">
+                        <div class="ach-badge">HACKATHON</div>
+                        <h3 class="ach-title">HackSnippet 4.0</h3>
+                        <p class="ach-desc">
+                            Secured <strong>2nd Runner-Up</strong> at the hackathon hosted by the Institute of Engineering and Management (IEM), Kolkata.
+                        </p>
+                    </div>
+
+                    <!-- Certification 1 -->
+                    <div class="glass-card achievement-card">
+                        <div class="ach-badge">NPTEL CERTIFICATION</div>
+                        <h3 class="ach-title">NPTEL Elite + Silver</h3>
+                        <p class="ach-desc">
+                            <strong>Elite + Silver</strong> in Principles of Management and AI in Human Resource Management; <strong>Elite</strong> in Soft Skills.
+                        </p>
+                    </div>
+
+                    <!-- Certification 2 -->
+                    <div class="glass-card achievement-card">
+                        <div class="ach-badge">IBM PROFESSIONAL</div>
+                        <h3 class="ach-title">IBM SkillsBuild Credentials</h3>
+                        <p class="ach-desc">
+                            Certifications in <strong>Machine Learning</strong> and <strong>AI Ethics</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: RESUME -->
+        <section id="resume" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Resume</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="resume-wrapper text-center">
+                    <div class="glass-card resume-card">
+                        <div class="resume-card-content">
+                            <div class="resume-badge-indicator">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Updated Resume • 2026</span>
+                            </div>
+                            <p class="resume-lead-text">Download my latest resume or preview it directly in your browser.</p>
+                            
+                            <div class="resume-actions-group">
+                                <a href="assets/Soumi_Saha_Resume.pdf" download="Soumi_Saha_Resume.pdf" class="resume-download-trigger" id="resume-download-btn">
+                                    <i class="fas fa-arrow-down-to-bracket" style="margin-right: 8px;"></i> Download Resume
+                                </a>
+                                <a href="assets/Soumi_Saha_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-view-trigger" id="resume-view-btn">
+                                    <i class="fas fa-arrow-up-right-from-square" style="margin-right: 8px;"></i> Open in New Tab
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CONTACT -->
+        <section id="contact" class="reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-card-container">
+                    <div class="glass-card contact-main-card">
+                        <div class="contact-card-content">
+                            
+                            <div class="contact-rows-grid">
+                                
+                                <!-- Email Row -->
+                                <a href="mailto:soumisms12@gmail.com" class="contact-row link-row email-link-row" id="contact-row-email" title="Click to send an email">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details-box">
+                                        <span class="contact-row-label">Email</span>
+                                        <span class="contact-row-val">soumisms12@gmail.com</span>
+                                    </div>
+                                    <div class="contact-row-actions">
+                                        <button type="button" class="action-copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address" data-copy="soumisms12@gmail.com">
+                                            <i class="fas fa-copy"></i>
+                                            <span class="action-tooltip">Copy</span>
+                                        </button>
+                                        <span class="row-link-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                                    </div>
+                                </a>
+
+                                <!-- LinkedIn Row -->
+                                <a href="https://www.linkedin.com/in/soumi-saha-523bba318" target="_blank" rel="noopener noreferrer" class="contact-row link-row" id="contact-row-linkedin">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div class="contact-details-box">
+                                        <span class="contact-row-label">LinkedIn</span>
+                                        <span class="contact-row-val">linkedin.com/in/soumi-saha-523bba318</span>
+                                    </div>
+                                    <span class="row-link-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                                </a>
+
+                                <!-- GitHub Row -->
+                                <a href="https://github.com/soumi-saha12" target="_blank" rel="noopener noreferrer" class="contact-row link-row" id="contact-row-github">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="contact-details-box">
+                                        <span class="contact-row-label">GitHub</span>
+                                        <span class="contact-row-val">github.com/soumi-saha12</span>
+                                    </div>
+                                    <span class="row-link-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER: Dark background -->
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-left">
+                <span class="footer-logo">Soumi.</span>
+                <p class="copyright">© 2026 Soumi Saha. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="footer-socials">
+                    <a href="https://github.com/soumi-saha12" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub" class="footer-soc-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/soumi-saha-523bba318" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn" class="footer-soc-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:soumisms12@gmail.com" aria-label="Email" title="Email soumisms12@gmail.com" class="footer-soc-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Comprehensive Page Interactions script -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ── APP WRAPPER ── -->
+    <div class="app-wrapper">
+
+        <!-- ── SIDEBAR (desktop only) ── -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">☁️</div>
+            <div class="geo-btn-wrapper">
+                <button type="button" class="geo-btn" aria-label="Get geolocation">📍</button>
+                <span class="geo-tooltip">Use Current Location</span>
+            </div>
+        </aside>
+
+        <!-- ── DASHBOARD ── -->
+        <main class="dashboard">
+
+            <!-- Background photo layer -->
+            <div class="bg-layer"></div>
+            <!-- Dark overlay for readability -->
+            <div class="bg-overlay"></div>
+
+            <!-- ── TOPBAR ── -->
+            <div class="topbar">
+                <div class="topbar-label">Weather App</div>
+                <form id="desktop-search-form" class="search-row" onsubmit="event.preventDefault();">
+                    <input type="text" class="search-input" id="desktop-search-input" placeholder="Search city..."
+                        autocomplete="off" required>
+                    <button type="submit" class="search-btn">Search</button>
+                    <!-- ── SEARCH HISTORY DROPDOWN ── -->
+                    <div class="search-history-dropdown" id="desktop-history-dropdown"></div>
+                </form>
+            </div>
+
+            <!-- ── CONTENT GRID ── -->
+            <div class="content-grid">
+
+                <!-- ── LEFT PANEL ── -->
+                <div class="left-panel">
+                    <div class="weather-tag">Weather Forecast</div>
+                    <img class="hero-icon" alt="Hero Weather Icon" style="display:none" width="0" height="0">
+                    <span class="weather-emoji"></span>
+                    <h1 class="condition-title" id="d-condition">Cloudy</h1>
+                    <p class="condition-desc" id="d-desc">Expect overcast skies with slight breeze.</p>
+
+                    <div class="bottom-stats">
+                        <div class="stat-item">
+                            <span>💨</span>
+                            <div>
+                                <span class="stat-label">Wind</span>
+                                <span class="stat-value" id="d-wind-val">-</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span>💧</span>
+                            <div>
+                                <span class="stat-label">Humidity</span>
+                                <span class="stat-value" id="d-humidity-val">-</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span>🌡️</span>
+                            <div>
+                                <span class="stat-label">Feels Like</span>
+                                <span class="stat-value" id="d-feels-val">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── RIGHT PANEL ── -->
+                <div class="right-panel">
+                    <!-- div.main-card (primary weather card) -->
+                    <div class="main-card">
+                        <p class="city-label" id="d-city-val">📍 -</p>
+                        <button class="pin-btn" title="Save this location">＋</button>
+                        <div class="temp-display" id="d-temp-val">-°</div>
+                        <button class="unit-toggle">Switch to °F</button>
+                        <div class="icon-row">
+                            <img id="d-weather-icon" src="" alt="Weather status icon" style="display:none" width="0"
+                                height="0">
+                            <span class="weather-emoji"></span>
+                            <span class="icon-condition" id="d-icon-condition">-</span>
+                        </div>
+                    </div>
+
+                    <!-- div.detail-card (secondary info card) -->
+                    <div class="detail-card">
+                        <div class="detail-item">
+                            <span class="d-label">Wind Speed</span>
+                            <span class="d-value" id="d-wind-val-2">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="d-label">Humidity</span>
+                            <span class="d-value" id="d-humidity-val-2">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="d-label">Feels Like</span>
+                            <span class="d-value" id="d-feels-val-2">-</span>
+                        </div>
+                    </div>
+
+                    <div class="saved-locations">
+                        <div class="saved-header">
+                            <span>📌 Saved Locations</span>
+                            <span class="saved-hint">MAX 5 CITIES</span>
+                        </div>
+                        <div class="saved-list"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ── BOTTOM BAR ── -->
+            <div class="bottom-bar">
+                <!-- loading/error positioned in dashboard -->
+                <div class="loading-spinner" id="desktop-loading"></div>
+                <div class="error-msg" id="desktop-error"></div>
+                <div class="last-updated" id="d-updated-val">-</div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- ════════════════════════════════
+       MOBILE — Dark Glassmorphism Layout
+       ════════════════════════════════ -->
+    <div class="mobile-card">
+
+        <!-- Background layers (same as desktop) -->
+        <div class="m-bg-layer"></div>
+        <div class="m-bg-overlay"></div>
+
+        <!-- Top search bar -->
+        <div class="m-topbar">
+            <form id="mobile-search-form" class="m-search-row" onsubmit="event.preventDefault();">
+                <input type="text" id="mobile-search-input" placeholder="Search city..." autocomplete="off" required>
+                <button type="submit" class="m-search-btn">Search</button>
+                <button type="button" class="geo-btn-mobile" id="mobile-geo-btn" aria-label="Get location">📍</button>
+            </form>
+            <div class="m-history-dropdown" id="mobile-history-dropdown"></div>
+        </div>
+
+        <!-- Unit toggle -->
+        <div class="m-unit-row">
+            <button type="button" class="m-unit-toggle-btn">
+                Switch to °F
+            </button>
+        </div>
+
+        <!-- Loading & error -->
+        <div class="loading-spinner" id="mobile-loading"></div>
+        <div class="error-msg" id="mobile-error"></div>
+
+        <!-- Weather tag -->
+        <div class="m-weather-tag" id="m-weather-tag">Weather Forecast</div>
+
+        <!-- Weather emoji -->
+        <span class="weather-emoji m-emoji"></span>
+
+        <!-- Condition title -->
+        <h2 class="m-condition-title" id="m-condition-val">-</h2>
+
+        <!-- Description -->
+        <p class="m-condition-desc" id="m-desc-val">-</p>
+
+        <!-- Mobile-only condition icon + label -->
+        <div class="m-condition-icon-row">
+            <span class="weather-emoji" id="m-mobile-emoji-label"></span>
+            <span class="m-icon-condition" id="m-icon-condition-val">-</span>
+        </div>
+
+        <!-- Mobile-only top weather info -->
+        <div class="m-top-info">
+            <div class="m-city-row">
+                <span class="m-city-label" id="m-city-val">📍 -</span>
+                <button class="pin-btn m-pin-btn" title="Save this location">＋</button>
+            </div>
+            <div class="m-temp-display" id="m-temp-val">-</div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="m-stats-row">
+            <div class="m-stat-item">
+                <span>💨</span>
+                <span class="m-stat-label">Wind</span>
+                <span class="m-stat-value" id="m-wind-val">-</span>
+            </div>
+            <div class="m-stat-item">
+                <span>💧</span>
+                <span class="m-stat-label">Humidity</span>
+                <span class="m-stat-value" id="m-humidity-val">-</span>
+            </div>
+            <div class="m-stat-item">
+                <span>🌡️</span>
+                <span class="m-stat-label">Feels Like</span>
+                <span class="m-stat-value" id="m-feels-val">-</span>
+            </div>
+        </div>
+
+        <!-- Detail card -->
+        <div class="m-detail-card">
+            <div class="m-detail-item-card">
+                <span class="md-label">Wind Speed</span>
+                <span class="md-value" id="m-wind-val-2">-</span>
+            </div>
+            <div class="m-detail-item-card">
+                <span class="md-label">Humidity</span>
+                <span class="md-value" id="m-humidity-val-2">-</span>
+            </div>
+            <div class="m-detail-item-card">
+                <span class="md-label">Feels Like</span>
+                <span class="md-value" id="m-feels-val-2">-</span>
+            </div>
+        </div>
+
+        <div class="saved-locations m-saved-locations">
+            <div class="saved-header">
+                <span>📌 Saved Locations</span>
+                <span class="saved-hint">MAX 5 CITIES</span>
+            </div>
+            <div class="saved-list m-saved-list"></div>
+        </div>
+
+        <!-- Last updated -->
+        <p class="m-updated" id="m-updated-val">-</p>
+
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
