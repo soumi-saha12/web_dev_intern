@@ -1,62 +1,175 @@
-# Beeskilled Web Development Internship
+<div align="center">
 
-## Internship Overview
+# 🐝 Beeskilled Web Development Internship
 
-- **Organization:** Beeskilled
-- **Role:** Web Development Intern
-- **Duration:** 26 May 2026 – 7 July 2026
+### *Production-Ready Front-End Applications & Interactive Web Dashboards*
 
-This repository consolidates the four web development projects developed during the Beeskilled Web Development Internship. Each project demonstrates core front-end engineering fundamentals, responsive design principles, clean architecture, and practical JavaScript implementations without relying on external UI frameworks.
+<p align="center">
+  <a href="#-projects-overview"><img src="https://img.shields.io/badge/Projects-4%20Completed-FF4FA3?style=for-the-badge" alt="4 Projects Completed"></a>
+  <img src="https://img.shields.io/badge/Role-Web%20Development%20Intern-00C7B7?style=for-the-badge" alt="Role: Web Development Intern">
+  <img src="https://img.shields.io/badge/Organization-Beeskilled-FFA500?style=for-the-badge" alt="Organization: Beeskilled">
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License: MIT">
+</p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/OpenWeatherMap_API-FF6B00?style=flat-square" alt="OpenWeatherMap API" />
+  <img src="https://img.shields.io/badge/Netlify_Functions-00C7B7?style=flat-square&logo=netlify&logoColor=white" alt="Netlify Functions" />
+  <img src="https://img.shields.io/badge/LocalStorage-2C2620?style=flat-square" alt="LocalStorage" />
+  <img src="https://img.shields.io/badge/Responsive_Design-success?style=flat-square" alt="Responsive Design" />
+</p>
 
-## Projects
-
-### 1. [Portfolio](./Portfolio/)
-A personal portfolio website showcasing developer profile, skills, education, projects, achievements, and contact information.
-- **Key Features:** Hero section with typewriter animation, glassmorphism sticky navigation bar, mobile-responsive menu, timeline view for education and experience, skills catalog, project highlights, and resume view/download.
-- **Folder:** [`Portfolio/`](./Portfolio/)
-
-### 2. [Weather App](./Weather-App/)
-A real-time weather forecasting web application with an immersive glassmorphism interface.
-- **Key Features:** Worldwide city search powered by the OpenWeatherMap API, current location weather via Geolocation API, detailed metrics (temperature, feels-like, humidity, wind speed), temperature unit toggle (°C/°F), condition-adaptive Unsplash background visuals, search history, and pinned locations persisted in `localStorage`. Includes a Netlify serverless function to securely proxy API requests.
-- **Folder:** [`Weather-App/`](./Weather-App/)
-
-### 3. [EduTrack](./EduTrack/)
-A client-side Student Management Dashboard built with zero external dependencies and a warm editorial design system.
-- **Key Features:** Full CRUD operations for student records via modal forms, persistent data storage using `localStorage`, sortable data table with search and grade badges, daily attendance roster tracker, assignment progress tracker with circular SVG indicators, analytics overview with animated line chart, one-click CSV export via the Blob API, and customizable theme accents.
-- **Folder:** [`EduTrack/`](./EduTrack/)
-
-### 4. [Gallery Grid](./Gallery-Grid/)
-An interactive, minimalist image gallery grid featuring cinematic interactions and zero third-party dependencies.
-- **Key Features:** Multi-breakpoint responsive grid layout, cinematic hover effects with subtle blur and scale transitions, immersive fullscreen lightbox with blurred backdrop and thumbnail strip, category filtering (All, Nature, Cosmic, Urban, Abstract), keyboard navigation (Arrow keys and Escape), touch swipe gesture handling on mobile, and a favorites system persisted via `localStorage`.
-- **Folder:** [`Gallery-Grid/`](./Gallery-Grid/)
+</div>
 
 ---
 
-## Technologies Used
+## 📌 Internship Overview
 
-The projects across this repository utilize the following technologies:
+| Parameter | Details |
+| :--- | :--- |
+| **Organization** | **Beeskilled** |
+| **Role** | **Web Development Intern** |
+| **Duration** | **26 May 2026 – 7 July 2026** |
+| **Repository Scope** | Consolidated submission of all four major web development projects built during the internship tenure |
 
-- **Markup & Semantics:** HTML5 (semantic layouts, forms, modals, tables, SVG elements)
-- **Styling & Layout:** CSS3 (CSS Grid, Flexbox, CSS Custom Properties/Tokens, Glassmorphism, CSS Transitions & Keyframe Animations, Responsive Media Queries)
-- **Programming & Logic:** JavaScript (ES6+ modular scripting, DOM manipulation, Event Handling, Keyboard & Touch Events)
-- **Web APIs & Storage:** `Fetch API`, `localStorage API`, `Blob API`, `Geolocation API`
-- **External APIs & Backend:** OpenWeatherMap API, Netlify Functions (Node.js serverless proxy)
-- **Typography & Icons:** Google Fonts (Inter, DM Serif Display, Syne, DM Sans), Font Awesome 6
-- **Hosting & Deployment:** Netlify, Git & GitHub
+During the internship at **Beeskilled**, I developed four fully responsive, client-side web applications designed with modern visual aesthetics, rigorous component hierarchy, and zero heavy front-end UI framework dependencies. Each project emphasizes modular JavaScript architecture, clean CSS layouts, intuitive user experiences, and native browser APIs.
 
 ---
 
-## Repository Structure
+## 🚀 Projects Overview
+
+| # | Project | Tech Stack | Live Demo | Source Directory |
+|:---:|---|---|:---:|:---:|
+| 1 | **Portfolio** | HTML5 · CSS3 · Vanilla JS | [🔗 View Demo](https://soumi-saha.netlify.app/) | [`Portfolio/`](./Portfolio/) |
+| 2 | **Weather App** | Vanilla JS · OpenWeatherMap API · Netlify Functions | [🔗 View Demo](https://weatheringboard.netlify.app) | [`Weather-App/`](./Weather-App/) |
+| 3 | **EduTrack** | HTML5 · CSS3 · Vanilla JS · LocalStorage | [🔗 View Demo](https://edutrack-sd.netlify.app/) | [`EduTrack/`](./EduTrack/) |
+| 4 | **Gallery Grid** | CSS Grid · Lightbox · Touch Gestures | [🔗 View Demo](https://gallery-grid.netlify.app) | [`Gallery-Grid/`](./Gallery-Grid/) |
+
+---
+
+## 📂 Detailed Project Showcases
+
+### 1. Portfolio
+
+[![Portfolio Live](https://img.shields.io/badge/Live_Demo-soumi--saha.netlify.app-FF4FA3?style=for-the-badge&logo=netlify&logoColor=white)](https://soumi-saha.netlify.app/)
+[![Folder](https://img.shields.io/badge/Source_Folder-Portfolio%2F-black?style=for-the-badge&logo=github)](./Portfolio/)
+
+A personal developer portfolio crafted with an editorial dark aesthetic (`#000000`) and hot pink (`#FF4FA3`) accents. Showcases developer profile, academic timeline, technical skills, machine learning projects, hackathon achievements, resume viewing, and interactive contact channels.
+
+- **Key Highlights:**
+  - Dynamic typewriter animation cycling across roles and skill sets
+  - Spinning gradient arc border on hero avatar
+  - Glassmorphic navigation bar with scroll-spy and responsive hamburger drawer
+  - Interactive project highlight cards with direct preview links
+  - Native modal resume viewer and direct PDF download trigger
+
+#### Dashboard Preview
+<p align="center">
+  <a href="https://soumi-saha.netlify.app/" target="_blank" rel="noopener noreferrer">
+    <img src="https://raw.githubusercontent.com/soumi-saha12/soumi-saha12/main/assets/portfolio.png" alt="Portfolio Homepage Preview" width="100%" />
+  </a>
+</p>
+
+---
+
+### 2. Weather App
+
+[![Weather App Live](https://img.shields.io/badge/Live_Demo-weatheringboard.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://weatheringboard.netlify.app)
+[![Folder](https://img.shields.io/badge/Source_Folder-Weather--App%2F-black?style=for-the-badge&logo=github)](./Weather-App/)
+
+A real-time worldwide weather forecasting application featuring an immersive translucent glassmorphism dashboard. Utilizes the OpenWeatherMap API coupled with a Netlify serverless function to keep API credentials secure from client exposure.
+
+- **Key Highlights:**
+  - Real-time weather search for global cities with autocomplete search history
+  - Browser Geolocation API integration for 1-click local forecast
+  - Metrics cards: Temperature, Feels Like, Humidity, Wind Speed, and Weather Condition
+  - Dynamic background imagery from Unsplash that shifts based on real-time atmospheric conditions (Rain, Clear, Thunderstorm, Snow, Mist)
+  - Unit toggle between Celsius (°C) and Fahrenheit (°F)
+  - Pinned favorite locations and recent searches stored via `localStorage`
+
+#### Dashboard Preview
+<p align="center">
+  <a href="https://weatheringboard.netlify.app" target="_blank" rel="noopener noreferrer">
+    <img src="./Weather-App/assets/images/desktop-screenshot.png" alt="Weather Dashboard Preview" width="100%" />
+  </a>
+</p>
+
+---
+
+### 3. EduTrack
+
+[![EduTrack Live](https://img.shields.io/badge/Live_Demo-edutrack--sd.netlify.app-C9A84C?style=for-the-badge&logo=netlify&logoColor=white)](https://edutrack-sd.netlify.app/)
+[![Folder](https://img.shields.io/badge/Source_Folder-EduTrack%2F-black?style=for-the-badge&logo=github)](./EduTrack/)
+
+A zero-dependency client-side Student Management Dashboard designed with a warm editorial aesthetic (cream canvas `#F5F0E8`, editorial gold `#C9A84C`, deep ink `#2C2620`, and DM Serif Display typography). Built as a fully functional single-page application with 5 integrated views.
+
+- **Key Highlights:**
+  - Full CRUD student record lifecycle management via accessible modal dialogs
+  - Comprehensive data sorting, keyword search, and class-level filtering
+  - Daily attendance roster tracker with bulk check-in capabilities
+  - Assignment submission manager with dynamic circular SVG progress indicators
+  - Dashboard analytics view with animated SVG line chart, stat summaries, and activity feeds
+  - One-click CSV student roster export using the HTML5 Blob API
+  - Live theme accent switcher and persistent application state saved to `localStorage`
+
+#### Dashboard Preview
+<p align="center">
+  <a href="https://edutrack-sd.netlify.app/" target="_blank" rel="noopener noreferrer">
+    <img src="./EduTrack/screenshots/dashboard.png" alt="EduTrack Dashboard Preview" width="100%" />
+  </a>
+</p>
+
+---
+
+### 4. Gallery Grid
+
+[![Gallery Grid Live](https://img.shields.io/badge/Live_Demo-gallery--grid.netlify.app-637F55?style=for-the-badge&logo=netlify&logoColor=white)](https://gallery-grid.netlify.app)
+[![Folder](https://img.shields.io/badge/Source_Folder-Gallery--Grid%2F-black?style=for-the-badge&logo=github)](./Gallery-Grid/)
+
+A minimalist, editorial image gallery highlighting seamless transitions, cinematic hover animations, and a rich fullscreen lightbox without using any third-party UI plugins or CSS frameworks.
+
+- **Key Highlights:**
+  - Multi-breakpoint responsive CSS Grid (3-column desktop, 2-column tablet, 1-column mobile)
+  - Cinematic hover effects with subtle image zoom, overlay darken, and title slide
+  - Fullscreen lightbox featuring blurred backdrop grid and thumbnail navigation strip
+  - Instant category filtering across Nature, Cosmic, Urban, and Abstract collections
+  - Interactive favorites bookmarking persisted in `localStorage`
+  - Complete keyboard navigation (Arrow navigation, Escape to close) and touch swipe gesture handling
+
+#### Dashboard / Grid Preview
+<p align="center">
+  <a href="https://gallery-grid.netlify.app" target="_blank" rel="noopener noreferrer">
+    <img src="./Gallery-Grid/screenshot-grid.png" alt="Gallery Grid Preview" width="100%" />
+  </a>
+</p>
+
+---
+
+## 🛠️ Technologies Used
+
+All technologies listed below are directly implemented and verified within the repository projects:
+
+- **Core Web:** HTML5, CSS3, JavaScript (ES6+ Vanilla)
+- **Layout & Design Systems:** CSS Grid, CSS Flexbox, Glassmorphism, CSS Custom Properties (Variables), Responsive Media Queries
+- **Animations & Graphics:** CSS Keyframe Animations, CSS Transitions, Inline SVG Graphics & SVG Progress Gauges
+- **Browser APIs & Storage:** `Fetch API`, `localStorage API`, `Blob API`, `Geolocation API`
+- **Backend & External APIs:** OpenWeatherMap REST API, Netlify Functions (Node.js Serverless Proxy)
+- **Typography & Icons:** Google Fonts (`Inter`, `DM Serif Display`, `Syne`, `DM Sans`), Font Awesome 6
+- **Tooling & Hosting:** Git, GitHub, Netlify CI/CD
+
+---
+
+## 📁 Repository Structure
 
 ```
 web_dev_intern/
 │
-├── README.md
-├── LICENSE
+├── README.md                  # Root documentation with project directory index
+├── LICENSE                    # Repository license
 │
-├── Portfolio/
+├── Portfolio/                 # Personal Portfolio Web App
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
@@ -64,7 +177,7 @@ web_dev_intern/
 │   ├── LICENSE
 │   └── README.md
 │
-├── Weather-App/
+├── Weather-App/               # Real-Time Weather Dashboard
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
@@ -73,7 +186,7 @@ web_dev_intern/
 │   ├── netlify.toml
 │   └── README.md
 │
-├── EduTrack/
+├── EduTrack/                  # Student Management Dashboard
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
@@ -81,7 +194,7 @@ web_dev_intern/
 │   ├── LICENSE
 │   └── README.md
 │
-└── Gallery-Grid/
+└── Gallery-Grid/              # Minimalist Image Gallery Grid
     ├── index.html
     ├── style.css
     ├── script.js
@@ -89,4 +202,32 @@ web_dev_intern/
     └── README.md
 ```
 
-Each project is self-contained and can be run independently by opening its `index.html` in any modern web browser or via a local static development server (such as VS Code Live Server). Detailed run instructions and documentation are available in each project's respective `README.md`.
+---
+
+## ⚡ How to Run Locally
+
+Each project is completely self-contained and requires zero complex build dependencies:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/soumi-saha12/web_dev_intern.git
+   cd web_dev_intern
+   ```
+
+2. **Open any project:**
+   - **Portfolio:** Open `Portfolio/index.html` in your web browser.
+   - **Weather App:** Open `Weather-App/index.html` in your web browser (or serve locally via VS Code Live Server / Netlify CLI).
+   - **EduTrack:** Open `EduTrack/index.html` in your web browser.
+   - **Gallery Grid:** Open `Gallery-Grid/index.html` in your web browser.
+
+---
+
+<div align="center">
+
+*Developed with care by **Soumi Saha** during the **Beeskilled Web Development Internship**.*
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-FF4FA3?style=for-the-badge)](https://soumi-saha.netlify.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/soumi-saha-523bba318)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/soumi-saha12)
+
+</div>
